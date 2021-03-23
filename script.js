@@ -1,18 +1,14 @@
-function Timer() {
+console.time();
 
-  let duration = 0
 
-  function getDuration() {
-    setInterval(myTimer, 1);
-  }
 
-  function myTimer() {
-    duration ++
-    console.log(duration)
-  }
-
+// Algorithm to time goes here
+let counter = 0
+for (i = 0; i < 10000; i++) {
+  counter ++
 }
 
-const timer = new Timer()
 
-timer.getDuration()
+
+
+console.timeEnd(); 
