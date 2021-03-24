@@ -1,5 +1,5 @@
 let array = []
-let sampleSize = 640
+let sampleSize = 1310720
 
 for(let i = 0; i < 10; i++) {
   console.time();
