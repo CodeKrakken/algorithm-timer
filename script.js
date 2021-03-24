@@ -1,12 +1,12 @@
 let array = []
-let sampleSize = 1310720
+let sampleSize = 10
+for(let i = 0; i < sampleSize; i++) {
+  array.push(i)
+}
 
 for(let i = 0; i < 10; i++) {
   console.time();
-  for(let j = 0; j < sampleSize; j++) {
-    array.push(j)
-  }
+  console.log(array.lastIndexOf)
   console.timeEnd()
   console.log(array.length)
-  array = []
 }
