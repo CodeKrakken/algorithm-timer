@@ -8,10 +8,11 @@ for(let h = 0; sampleSize < 1500000; h++) {
   }
 
   for(let j = 0; j < 10; j++) {
+    console.log(array.length)
     console.time();
-    console.log(array[array.length-1])
+    array.reverse()
     console.timeEnd()
   }
-
+  array = []
   sampleSize = sampleSize * 2
 }
