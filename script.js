@@ -29,7 +29,6 @@ for(let h = 0; sampleSize < 1500000; h++) {
     console.log(array.length)
     console.time();
     array = shuffle(array)
-    console.log(array)
     console.timeEnd()
   }
   array = []
