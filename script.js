@@ -27,9 +27,12 @@ for(let h = 0; sampleSize < 1500000; h++) {
 
   for(let j = 0; j < 10; j++) {
     console.log(array.length)
-    console.time();
+    
     array = shuffle(array)
+    console.time();
+    array.sort()
     console.timeEnd()
+    console.log(array)
   }
   array = []
   sampleSize = sampleSize * 2
