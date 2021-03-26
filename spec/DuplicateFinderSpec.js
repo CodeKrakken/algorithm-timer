@@ -15,5 +15,11 @@ describe('duplicate finder', function() {
     expect(duplicateFinder.findDuplicates(['Reg', 'Reg'])).toEqual(['Reg'])
   })
 
+  it('returns an array of a single name from an array of three where two match', function() {
+    expect(duplicateFinder.findDuplicates(['Reg', 'Anna', 'Anna'])).toEqual(['Anna'])
+    expect(duplicateFinder.findDuplicates(['Anna', 'Reg', 'Anna'])).toEqual(['Anna'])
+    expect(duplicateFinder.findDuplicates(['Anna', 'Anna', 'Reg'])).toEqual(['Anna'])
+  })
+
 
 })
