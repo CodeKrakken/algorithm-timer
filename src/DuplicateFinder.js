@@ -1,6 +1,6 @@
 function DuplicateFinder() {
   
-  function findDuplicates(array) {
+  this.findDuplicates = function(array) {
     let duplicates = []
     array.sort()
     for(let k = 0; k < array.length-1; k++) {

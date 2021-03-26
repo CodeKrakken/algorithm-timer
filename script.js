@@ -1,3 +1,6 @@
+const DuplicateFinder = require('./src/DuplicateFinder')
+const duplicateFinder = new DuplicateFinder
+
 let array = []
 let sampleSize = 10
 
@@ -11,7 +14,7 @@ for(let h = 0; sampleSize < 1500000; h++) {
     console.log(array.length)
     
     console.time();
-    const duplicates = findDuplicates(array)
+    const duplicates = duplicateFinder.findDuplicates(array)
     console.timeEnd()
     console.log(duplicates)
   }
