@@ -21,5 +21,8 @@ describe('duplicate finder', function() {
     expect(duplicateFinder.findDuplicates(['Anna', 'Anna', 'Reg'])).toEqual(['Anna'])
   })
 
+  it('picks through complex array to find duplicates', function() {
+    expect(duplicateFinder.findDuplicates(['Reg', 'Bob', 'Anna', 'Anna', 'Anna', 'Bob', 'Clive', 'Denzil', 'Denzil'])).toEqual(['Anna', 'Anna', 'Bob', 'Denzil'])
 
+  })
 })
